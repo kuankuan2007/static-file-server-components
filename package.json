@@ -1,6 +1,6 @@
 {
     "name": "@kuankuan/static-file-server-components",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "static file server components",
     "license":"MulanPSL-2.0",
     "author": {
