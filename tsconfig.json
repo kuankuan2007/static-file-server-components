@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"lib": [
+			"es2015",
+			"ES6",
+			"DOM"
+		],
+
+		"rootDir": "src",
+		"outDir": "lib",
+    "declaration": true,
+		"pretty": true
+	},
+	"include": [
+		"typings/**/*",
+		"src/**/*"
+	]
+}
