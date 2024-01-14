@@ -1,5 +1,5 @@
 import http from "node:http"
-import com from "../lib/main.js"
+const com=require("../").default
 
 const a=new com({
     rootDir:process.cwd(),

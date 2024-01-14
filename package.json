@@ -1,8 +1,8 @@
 {
     "name": "@kuankuan/static-file-server-components",
-    "version": "0.1.1",
+    "version": "0.1.3",
     "description": "static file server components",
-    "license":"MulanPSL-2.0",
+    "license": "MulanPSL-2.0",
     "author": {
         "name": "kuankuan",
         "email": "2163826131@qq.com",
@@ -17,19 +17,24 @@
     "scripts": {
         "build": "node ./assist/build.js"
     },
-    "files": ["./lib/**/*"],
+    "files": [
+        "./lib/**/*"
+    ],
     "module": "./lib/main.mjs",
     "main": "./lib/main.cjs",
-    "types": "./lib/main.d.ts",
-    "exports":{
-        ".":{
+    "exports": {
+        ".": {
             "require": {
-                "default":"./lib/main.cjs",
-                "types":"./lib/main.d.ts"
-            },"import":{
-                "default":"./lib/main.mjs",
-                "types":"./lib/main.d.mts"
+                "default": "./lib/main.cjs",
+                "types": "./lib/main.d.cts"
+            },
+            "import": {
+                "default": "./lib/main.mjs",
+                "types": "./lib/main.d.mts"
             }
         }
-    }
+    },
+    "devDependencies": {
+        "esbuild": "^0.19.11"
+    },"keywords": ["file", "server","node"]
 }
